@@ -17,7 +17,7 @@ Template.recorder.events({
              Koppla recordingen till ett broadcaster ID så att 
              users som lyssnar på den radion korrekt får inspelningen 
              av broadcastern*/
-          console.log("fileObj._id added to mongodb");
+          console.log(fileObj._id + "added to mongodb");
         }
       });
     });
