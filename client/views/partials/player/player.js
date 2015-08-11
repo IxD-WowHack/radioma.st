@@ -19,6 +19,18 @@ Template.player.events({
       var sliderValue = parseInt(event.currentTarget.value) / 100;
       console.log(sliderValue);
       Session.set('crossfade', sliderValue.toString());
+   },
+   'click [add-listener]': function (event) {
+     /*var listenerAttributes = {
+      radioId: "1337"
+    };*/
+      Meteor.call("addListener");
+   },
+   'click [add-broadcaster]': function (event) {
+     /*var broadcaster = {
+      radioId: "1337"
+    };*/
+      Meteor.call("addBroadcaster");
    }
 });
 
